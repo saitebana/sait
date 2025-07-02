@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Программы для праздника | Праздник сУтками!</title>
+    <meta name="description" content="Яркие и веселые программы для детских праздников, дней рождений и корпоративов">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Логотип Праздник сУтками" class="logo__img">
+                    <span class="logo__text">Праздник с<span>Утками</span>!</span>
+                </a>
+                
+                <nav class="nav">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <a href="costumes.html" class="nav__link">Персонажи</a>
+                    <a href="programs.html" class="nav__link active">Программы</a>
+                    <a href="gallery.html" class="nav__link">Галерея</a>
+                    <a href="reviews.html" class="nav__link">Отзывы</a>
+                    <a href="contacts.html" class="nav__link">Контакты</a>
+                </nav>
+                
+                <div class="header__contacts">
+                    <a href="tel:+79786691090" class="header__phone">+7 (978) 669-10-90</a>
+                    <div class="social-links">
+                        <a href="https://vk.com/prazdnik_sutkami" class="social-link vk" target="_blank" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="https://instagram.com/prazdnik_sutkami" class="social-link insta" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/prazdnik_sutkami" class="social-link tg" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/79786691090" class="social-link wa" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <main class="main">
+        <!-- Хлебные крошки -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <a href="index.html" class="breadcrumbs__link">Главная</a>
+                <span class="breadcrumbs__separator">/</span>
+                <span class="breadcrumbs__current">Программы</span>
+            </div>
+        </section>
+
+        <!-- Заголовок страницы -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-header__title">Наши программы</h1>
+                <p class="page-header__subtitle">Более 20 увлекательных сценариев для любого праздника</p>
+            </div>
+        </section>
+
+        <!-- Категории программ -->
+        <section class="section programs-categories">
+            <div class="container">
+                <h2 class="section__title">Категории программ</h2>
+                <div class="categories__grid">
+                    <!-- Категория 1 -->
+                    <div class="category-card" data-category="birthday">
+                        <div class="category-card__image">
+                            <img src="images/programs/birthday.jpg" alt="Дни рождения" loading="lazy">
+                        </div>
+                        <h3 class="category-card__title">Дни рождения</h3>
+                    </div>
+                    
+                    <!-- Категория 2 -->
+                    <div class="category-card" data-category="holiday">
+                        <div class="category-card__image">
+                            <img src="images/programs/holiday.jpg" alt="Тематические праздники" loading="lazy">
+                        </div>
+                        <h3 class="category-card__title">Тематические</h3>
+                    </div>
+                    
+                    <!-- Категория 3 -->
+                    <div class="category-card" data-category="school">
+                        <div class="category-card__image">
+                            <img src="images/programs/school.jpg" alt="Школьные мероприятия" loading="lazy">
+                        </div>
+                        <h3 class="category-card__title">Школьные</h3>
+                    </div>
+                    
+                    <!-- Категория 4 -->
+                    <div class="category-card" data-category="new-year">
+                        <div class="category-card__image">
+                            <img src="images/programs/new-year.jpg" alt="Новогодние программы" loading="lazy">
+                        </div>
+                        <h3 class="category-card__title">Новогодние</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Популярные программы -->
+        <section class="section popular-programs">
+            <div class="container">
+                <h2 class="section__title">Популярные программы</h2>
+                <div class="programs-grid">
+                    <!-- Программа 1 -->
+                    <div class="program-card" data-category="birthday">
+                        <div class="program-card__image">
+                            <img src="images/programs/pirate.jpg" alt="Пиратская вечеринка" loading="lazy">
+                            <div class="program-card__badge">Хит</div>
+                        </div>
+                        <div class="program-card__content">
+                            <h3 class="program-card__title">Пиратская вечеринка</h3>
+                            <p class="program-card__text">Поиск сокровищ, морские баталии и веселые конкурсы</p>
+                            <div class="program-card__details">
+                                <span class="program-card__duration">1.5 часа</span>
+                                <span class="program-card__age">5-12 лет</span>
+                                <span class="program-card__price">5000 руб.</span>
+                            </div>
+                            <button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Программа 2 -->
+                    <div class="program-card" data-category="holiday">
+                        <div class="program-card__image">
+                            <img src="images/programs/princess.jpg" alt="Бал принцесс" loading="lazy">
+                        </div>
+                        <div class="program-card__content">
+                            <h3 class="program-card__title">Бал принцесс</h3>
+                            <p class="program-card__text">Танцы, конкурсы и волшебные превращения</p>
+                            <div class="program-card__details">
+                                <span class="program-card__duration">1 час</span>
+                                <span class="program-card__age">3-10 лет</span>
+                                <span class="program-card__price">4500 руб.</span>
+                            </div>
+                            <button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Программа 3 -->
+                    <div class="program-card" data-category="school">
+                        <div class="program-card__image">
+                            <img src="images/programs/science.jpg" alt="Научное шоу" loading="lazy">
+                            <div class="program-card__badge">Новинка</div>
+                        </div>
+                        <div class="program-card__content">
+                            <h3 class="program-card__title">Научное шоу</h3>
+                            <p class="program-card__text">Занимательные эксперименты и опыты</p>
+                            <div class="program-card__details">
+                                <span class="program-card__duration">1 час</span>
+                                <span class="program-card__age">6-14 лет</span>
+                                <span class="program-card__price">6000 руб.</span>
+                            </div>
+                            <button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Программа 4 -->
+                    <div class="program-card" data-category="new-year">
+                        <div class="program-card__image">
+                            <img src="images/programs/winter.jpg" alt="Зимняя сказка" loading="lazy">
+                        </div>
+                        <div class="program-card__content">
+                            <h3 class="program-card__title">Зимняя сказка</h3>
+                            <p class="program-card__text">Новогодние приключения с Дедом Морозом</p>
+                            <div class="program-card__details">
+                                <span class="program-card__duration">1.5 часа</span>
+                                <span class="program-card__age">3-12 лет</span>
+                                <span class="program-card__price">5500 руб.</span>
+                            </div>
+                            <button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Тарифы -->
+        <section class="section tariffs bg-light">
+            <div class="container">
+                <h2 class="section__title">Наши тарифы</h2>
+                <div class="tariffs__grid">
+                    <!-- Тариф 1 -->
+                    <div class="tariff-card">
+                        <div class="tariff-card__content">
+                            <h3 class="tariff-card__title">Базовый</h3>
+                            <div class="tariff-card__price">5000 руб.</div>
+                            <ul class="tariff-card__features">
+                                <li>1 аниматор</li>
+                                <li>1 час программы</li>
+                                <li>Простой сценарий</li>
+                                <li>Небольшие подарки</li>
+                            </ul>
+                            <button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Тариф 2 -->
+                    <div class="tariff-card popular">
+                        <div class="tariff-card__badge">Популярный</div>
+                        <div class="tariff-card__content">
+                            <h3 class="tariff-card__title">Стандарт</h3>
+                            <div class="tariff-card__price">8000 руб.</div>
+                            <ul class="tariff-card__features">
+                                <li>2 аниматора</li>
+                                <li>1.5 часа программы</li>
+                                <li>Тематический сценарий</li>
+                                <li>Аквагрим</li>
+                                <li>Подарки для всех</li>
+                            </ul>
+                            <button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Тариф 3 -->
+                    <div class="tariff-card">
+                        <div class="tariff-card__content">
+                            <h3 class="tariff-card__title">Премиум</h3>
+                            <div class="tariff-card__price">12000 руб.</div>
+                            <ul class="tariff-card__features">
+                                <li>2-3 аниматора</li>
+                                <li>2 часа программы</li>
+                                <li>Индивидуальный сценарий</li>
+                                <li>Аквагрим и фотосессия</li>
+                                <li>Ростовые куклы</li>
+                                <li>Торт и украшения</li>
+                            </ul>
+<button class="btn btn--outline btn-order" id="openModalBtn">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как заказать -->
+        <section class="section workflow">
+    <div class="container">
+        <h2 class="section__title">Как заказать программу</h2>
+        <div class="workflow__steps">
+                    <!-- Шаг 1 -->
+                    <div class="step">
+                        <div class="step__number">1</div>
+                        <h3 class="step__title">Выберите программу</h3>
+                        <p class="step__description">Определитесь с тематикой и продолжительностью</p>
+                    </div>
+                    
+                    <!-- Шаг 2 -->
+                    <div class="step">
+                        <div class="step__number">2</div>
+                        <h3 class="step__title">Свяжитесь с нами</h3>
+                        <p class="step__description">Позвоните или оставьте заявку на сайте</p>
+                    </div>
+                    
+                    <!-- Шаг 3 -->
+                    <div class="step">
+                        <div class="step__number">3</div>
+                        <h3 class="step__title">Обсудите детали</h3>
+                        <p class="step__description">Мы уточним все нюансы и пожелания</p>
+                    </div>
+                    
+                    <!-- Шаг 4 -->
+                    <div class="step">
+                        <div class="step__number">4</div>
+                        <h3 class="step__title">Подтвердите бронь</h3>
+                        <p class="step__description">Внесите предоплату и получите подтверждение</p>
+                    </div>
+                </div>
+                 <div class="workflow__cta">
+           <button class="btn btn--outline btn-order" id="openModalBtn">Заказать праздник!</button>
+        </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <a href="index.html" class="footer__logo">
+                        <img src="images/logo.png" alt="Праздник сУтками">
+                        <span>Праздник сУтками!</span>
+                    </a>
+                    <p class="footer__text">Организация незабываемых праздников с 2024 года</p>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Меню</h3>
+                    <nav class="footer__nav">
+                        <a href="index.html" class="footer__link">Главная</a>
+                        <a href="costumes.html" class="footer__link">Персонажи</a>
+                        <a href="programs.html" class="footer__link">Программы</a>
+                        <a href="gallery.html" class="footer__link">Галерея</a>
+                        <a href="reviews.html" class="footer__link">Отзывы</a>
+                    </nav>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Услуги</h3>
+                    <nav class="footer__nav">
+                        <a href="birthdays.html" class="footer__link">Дни рождения</a>
+                        <a href="school-events.html" class="footer__link">Школьные праздники</a>
+                        <a href="new-year.html" class="footer__link">Новый Год</a>
+                        <a href="corporate.html" class="footer__link">Корпоративы</a>
+                    </nav>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <div class="footer__phones">
+                        <a href="tel:+79786691090" class="footer__phone">+7 (978) 669-10-90</a>
+                        <a href="tel:+79788388070" class="footer__phone">+7 (978) 838-80-70</a>
+                    </div>
+                    
+                    <h3 class="footer__title" style="margin-top: 20px;">Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="https://vk.com/prazdnik_sutkami" class="social-link vk" target="_blank" aria-label="ВКонтакте"><i class="fab fa-vk"></i></a>
+                        <a href="https://instagram.com/prazdnik_sutkami" class="social-link insta" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/prazdnik_sutkami" class="social-link tg" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://wa.me/79786691090" class="social-link wa" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Праздник сУтками! Все права защищены.</p>
+                <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Кнопка "Наверх" -->
+    <a href="#" class="to-top" aria-label="Наверх">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Модальное окно заказа -->
+   <!-- Модальное окно заказа -->
+<div class="modal" id="orderModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeModalBtn">&times;</button>
+            <h2 class="modal__title">Заказать праздник</h2>
+            <p class="modal__text">Заполните форму ниже, и мы свяжемся с вами для уточнения деталей!</p>
+            
+            <form class="form" id="modalForm">
+                <div class="form__group">
+                    <label class="form__label" for="modal-name">Ваше имя*</label>
+                    <input class="form__input" type="text" id="modal-name" name="name" required placeholder="Как к вам обращаться?">
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="modal-phone">Телефон*</label>
+                    <input class="form__input" type="tel" id="modal-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="modal-event">Тип праздника*</label>
+                    <select class="form__select" id="modal-event" name="event" required>
+                        <option value="" disabled selected>Выберите тип праздника</option>
+                        <option value="birthday">День рождения</option>
+                        <option value="school">Школьный праздник</option>
+                        <option value="newyear">Новый год</option>
+                        <option value="graduation">Выпускной</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="modal-date">Дата праздника</label>
+                    <input class="form__input" type="date" id="modal-date" name="date">
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="modal-guests">Количество гостей</label>
+                    <input class="form__input" type="number" id="modal-guests" name="guests" min="1" max="100" placeholder="Пример: 10">
+                </div>
+                
+                <div class="form__group">
+                    <label class="form__label" for="modal-message">Дополнительная информация</label>
+                    <textarea class="form__textarea" id="modal-message" name="message" placeholder="Место проведения, особые пожелания и т.д."></textarea>
+                </div>
+                
+                <div class="form__group">
+                    <button type="submit" class="btn btn--primary btn--block">Отправить заявку</button>
+                </div>
+                
+                <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" class="link">политикой конфиденциальности</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
